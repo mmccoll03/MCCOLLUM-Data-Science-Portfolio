@@ -13,6 +13,8 @@ df = df.drop('id', axis=1)
 ## Different filters
 user_selections = {}
 
+# It doesn't make the most sense to iterate through all columns, like weight or height,
+# But this still shows the filtering capability of the app. 
 # Loop through column names
 for col in df.columns:
     choices = ["None"] + list(df[col].unique())
@@ -118,23 +120,23 @@ st.image('basic-streamlit-app/usa.png')
 df3 = df[df['team'] == 'United States']
 df3 = df3.drop_duplicates(subset='name')
 
-sports = df3['event'].unique()
+sports = df3['sport'].unique()
 options = ['Male', 'Female', 'Summer', 'Winter'] + list(sports)
 selection = st.multiselect('Multiselect', options)
 
 #filter
 if 'Male' in selection:
-    df3 = df3[df3['sex'] == 'Male']
+    df3 = df3[df3['sex'] == 'M']
 elif 'Female' in selection:
-    df3 = df3[df3['sex'] == 'Female']
+    df3 = df3[df3['sex'] == 'F']
 
 if 'Summer' in selection:
     df3 = df3[df3['season'] == 'Summer']
 elif 'Winter' in selection:
     df3 = df3[df3['season'] == 'Winter']
 
-selected_sports = [sport for sport in options if sport in sports]
+selected_sports = [sport for sport in selection if sport in sports]
 if selected_sports:
-    df3 = df3[df3['event'].isin(selected_sports)]
+    df3 = df3[df3['sport'].isin(selected_sports)]
 
 st.write(df3)
