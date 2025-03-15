@@ -3,6 +3,8 @@
 
 ## Update 2/9/25
  https://github.com/mmccoll03/MCCOLLUM-Data-Science-Portfolio/tree/main/basic-streamlit-app
+ 
+ 
 I created a basic streamlit app using olympic data from Tidy Tuesday data. It offers some basic filtering functionality to view the stats for olympic teams and athletes throughout history. View the README within the basic-streamlit-app folder to experiment with the streamlit app.
 
 By completing this project, I hope to illustrate:
@@ -15,6 +17,8 @@ By completing this project, I hope to illustrate:
 
 ## Update 3/12/25 
  https://github.com/mmccoll03/MCCOLLUM-Data-Science-Portfolio/tree/main/TidyData-Project
+ 
+
 This Project seeks to apply Tidy Data Principles to the Mutant Moneyball dataset. In this project, I use pandas to clean and organize my data from a wide to long format and provide some visualizations of the data. 
 
 By completing this project, I hope to illustrate:
