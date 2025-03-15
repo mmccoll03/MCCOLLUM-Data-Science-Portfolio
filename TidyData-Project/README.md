@@ -23,7 +23,7 @@ You can install the required Python packages using `pip` or `conda`. Ensure you 
 - `matplotlib` and `seaborn` for visualizations
 - `numpy` for numerical operations
 
-# 3. Run the notebook
+# 3. Run the notebook (tidy_mutants.ipynb)
 Once the notebook is open, execute each cell sequentially to observe how the data is transformed, analyzed, and visualized. Each section of the notebook corresponds to a specific part of the data transformation and visualization process.
 
 ## Dataset Description
