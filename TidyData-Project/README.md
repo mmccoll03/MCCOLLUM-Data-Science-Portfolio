@@ -43,6 +43,11 @@ The dataset used in this project contains records of mutant characters, their to
 - [Tidy Data Paper by Hadley Wickham](https://vita.had.co.nz/papers/tidy-data.pdf)
 - [Tidy Data Cheat Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
 
+### Small Streamlit Dashboard
+
+**Use streamlit run streamlit.py**
+- This just shows some basic filtering of the melted dataframe. I may come back to this to incorporate further visualizations or a better design, but for right now, it is useful to view the dataframe for what it is. 
+
 ### Screenshots 
 
 # Bar Plot of Total Value (Dollars) by 4 different Mutants and Decade and Market
