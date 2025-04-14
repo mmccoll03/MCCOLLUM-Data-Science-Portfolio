@@ -40,7 +40,7 @@ With this app, you can:
     ```
     graphviz==0.20.3
     matplotlib==3.7.2
-    numpy==1.24.3
+    numpy>=1.25.0
     pandas==2.0.3
     scikit_learn==1.3.0
     scipy==1.15.2
@@ -63,7 +63,7 @@ With this app, you can:
 ### Deployed Version
 
 A deployed version of the app is available   
-[here](mccollum-data-science-portfolio-mrgdaqnfdvopcqumqdqx9o
+[here](mccollum-data-science-portfolio-2fdarqeqksxqkzuiudvycx
 .streamlit.app)
 
 ## App Features
