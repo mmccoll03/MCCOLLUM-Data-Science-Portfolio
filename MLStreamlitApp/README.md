@@ -63,8 +63,7 @@ With this app, you can:
 ### Deployed Version
 
 A deployed version of the app is available   
-[here](mccollum-data-science-portfolio-u55wb5gn9mbo8ywsxzsrgu
-.streamlit.app)
+[here](https://mccollum-data-science-portfolio-u55wb5gn9mbo8ywsxzsrgu.streamlit.app)
 
 ## App Features
 
