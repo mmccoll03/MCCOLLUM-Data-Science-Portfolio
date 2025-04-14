@@ -27,3 +27,16 @@ By completing this project, I hope to illustrate:
  - Ability to visualize data and draw meaningful conclusions
 
  This complements my overall portfolio by showcasing important data science skills that would prove helpful in academic or professional environments. 
+
+ ## Supervised Machine Learning Streamlit App (4/14/25)
+ https://github.com/mmccoll03/MCCOLLUM-Data-Science-Portfolio/tree/main/MLStreamlitApp
+
+ This project uses streamlit to create an interactive dashboard to explore and learn about different
+ concepts in supervised Machine Learning. I use python to create showcases of linear regression, logistic regression on a perceptron, K nearest neighbors, and decision trees. This app allows users to upload their own datasets to complete analysis using these ML algorithms, or they can look at some demos with datasets I provide.
+
+ By completing this project, I hope to illustrate:
+ - My proficiency with Python and Streamlit
+ - The ability to visualize data and tune hyperparameters in a unique way
+ - To create a comprehensive, and easy-to-use streamlit app for everyone to use.
+
+ This project adds to my portfolio by showing my ability to explain and demonstrate complicated topics in data science in Machine Learning in a fun and interactive way. 
