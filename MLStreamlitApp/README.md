@@ -62,8 +62,8 @@ With this app, you can:
 
 ### Deployed Version
 
-A deployed version of the app is available at:  
-[https://share.streamlit.io/mmccoll03/MLStreamlitApp](mccollum-data-science-portfolio-m9ezfggvufvsj6dhqgmi9g
+A deployed version of the app is available   
+[here](mccollum-data-science-portfolio-m9ezfggvufvsj6dhqgmi9g
 .streamlit.app)
 
 ## App Features
