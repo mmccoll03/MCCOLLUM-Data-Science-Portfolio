@@ -102,10 +102,10 @@ A deployed version of the app is available at:
 
 Below are some screenshots from the app:
 
-![Perceptron Logistic Loss curve](images/Screenshot 2025-04-14 at 13.22.07.png)  
+![Perceptron Logistic Loss curve](images/loss.png)  
 *Example of the loss curve generatd when applying logistic regression to a simple ANN.*
 
-![Decision Tree Visualization](images/Screenshot 2025-04-14 at 13.22.50.png)  
+![Decision Tree Visualization](images/tree.png)  
 *Example of the decision tree page with Graphviz visualization and interactive depth tuning.*
 
 ---
