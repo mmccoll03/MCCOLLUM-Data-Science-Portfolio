@@ -8,7 +8,7 @@
 - **[Unsupervised Machine Learning Streamlit App (5/06/25)](https://github.com/mmccoll03/MCCOLLUM-Data-Science-Portfolio/tree/main/MLUnsupervisedApp):** A hands-on app demonstrating PCA, K-Means clustering, and hierarchical clustering with example datasets and interactive visual analytics.
 
 ## Basic Streamlit App (2/9/25)
- https://github.com/mmccoll03/MCCOLLUM-Data-Science-Portfolio/tree/main/basic-streamlit-app
+ [basic-streamlit-app →](https://github.com/mmccoll03/MCCOLLUM-Data-Science-Portfolio/tree/main/basic-streamlit-app)
  
  
 I created a basic streamlit app using olympic data from Tidy Tuesday data. It offers some basic filtering functionality to view the stats for olympic teams and athletes throughout history. View the README within the basic-streamlit-app folder to experiment with the streamlit app.
@@ -22,7 +22,7 @@ By completing this project, I hope to illustrate:
  This complements my overall portfolio by showing I know how to made data look readable and meaningful in an interactive and accessible way. 
 
 ## Tidy Data Project (3/17/25)
- https://github.com/mmccoll03/MCCOLLUM-Data-Science-Portfolio/tree/main/TidyData-Project
+ [TidyData-Project →](https://github.com/mmccoll03/MCCOLLUM-Data-Science-Portfolio/tree/main/TidyData-Project)
  
 
 This Project seeks to apply Tidy Data Principles to the Mutant Moneyball dataset. In this project, I use pandas to clean and organize my data from a wide to long format and provide some visualizations of the data. 
@@ -35,7 +35,7 @@ By completing this project, I hope to illustrate:
  This complements my overall portfolio by showcasing important data science skills that would prove helpful in academic or professional environments. 
 
  ## Supervised Machine Learning Streamlit App (4/14/25)
- https://github.com/mmccoll03/MCCOLLUM-Data-Science-Portfolio/tree/main/MLStreamlitApp
+ [MLStreamlitApp →](https://github.com/mmccoll03/MCCOLLUM-Data-Science-Portfolio/tree/main/MLStreamlitApp)
 
  This project uses streamlit to create an interactive dashboard to explore and learn about different
  concepts in supervised Machine Learning. I use python to create showcases of linear regression, logistic regression on a perceptron, K nearest neighbors, and decision trees. This app allows users to upload their own datasets to complete analysis using these ML algorithms, or they can look at some demos with datasets I provide.
