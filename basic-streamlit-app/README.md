@@ -1,12 +1,58 @@
-# This is a basic Streamlit app which reads data and has interactivity widgets in Streamlit.
+# Basic Streamlit Olympic Dashboard
 
-## Data Includes:
-A csv file from tidy Tuesday that has around 271,000 rows of Olympic athletes from the the 1900s and 2000s. The variables include their names, their sex, age, height, weight, team, which games they played, what year they competed, which season it was, the city they competed in, the sport and event they competed in, and if they won a medal. 
+## Project Overview
 
-This app involves some filtering functions to look at the data based on medals won, and to look at athletes that were on the US team. 
+**Basic Streamlit Olympic Dashboard** is an interactive app built with Python and Streamlit to explore historical Olympic athlete data from the Tidy Tuesday repository. It allows users to filter and visualize athlete statistics—such as age, height, weight, team, and medal counts—across different years and seasons.
 
-Note: While the code seems to work correctly, I don't think this data itself is competely accurate. There are some strange team names, and the medals counts don't add up to numbers that make sense. After a lot of troubleshooting, I think the medals counts are true for what is in the data, but these numbers do not reflect true medal counts. I don't know what the explanation for this would be, but there is still basic functionality within the app. 
+## Instructions
 
-## Use "streamlit run basic_streamlit_app/main.py" to open the app
+### Running the App Locally
 
-The data is in the data folder as olympics.csv
+1. **Clone the Repository**  
+   git clone https://github.com/mmccoll03/MCCOLLUM-Data-Science-Portfolio.git  
+   cd MCCOLLUM-Data-Science-Portfolio/basic-streamlit-app
+
+2. **Set Up a Virtual Environment**  
+   python -m venv venv  
+   source venv/bin/activate    # On Windows: venv\Scripts\activate
+
+3. **Install Dependencies**  
+   Ensure your requirements.txt contains at least:  
+   pandas  
+   streamlit  
+   matplotlib  
+   seaborn  
+   Then run:  
+   pip install -r requirements.txt
+
+4. **Launch the App**  
+   streamlit run main.py  
+   Open your browser to http://localhost:8501.
+
+## App Features
+
+- **Data Filtering**  
+  - Filter athletes by medal status (Gold, Silver, Bronze, None).  
+  - Filter by team (e.g., United States) and season (Summer/Winter).  
+  - Select specific years or year ranges to narrow the dataset.
+
+- **Interactive Visualizations**  
+  - Dynamic histograms and bar charts showing age, height, weight distributions.  
+  - Time-series plots of medal counts by year or team.  
+  - Summary panels with key statistics that update as filters change.
+
+- **Data Quality Notice**  
+  The source dataset may contain inconsistencies—unusual team names or medal count mismatches—that reflect issues in the raw data but do not affect the app’s interactive functionality.
+
+## Data
+
+All data is stored in data/olympics.csv, containing ~271,000 records from the 1900s–2000s with the following fields:  
+- Name, Sex, Age, Height, Weight  
+- Team, Games, Year, Season, City  
+- Sport, Event, Medal
+
+## References
+
+- Tidy Tuesday – Olympics Data: https://github.com/rfordatascience/tidytuesday  
+- Streamlit Documentation: https://docs.streamlit.io/  
+- Pandas Documentation: https://pandas.pydata.org/
