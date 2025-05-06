@@ -9,6 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from scipy.cluster.hierarchy import linkage, dendrogram
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.metrics import silhouette_score
+import os
 
 
 def show():
@@ -33,7 +34,14 @@ def show():
         "the mall customers dataset is well suited for this kind of clustering," \
         " and it isn't all that different from k-means clustering."
     )
-    df = pd.read_csv("datasets/Mall_Customers.csv")
+    @st.cache_data
+    def load_example_data():
+        # __file__ is something like ".../MLUnsupervisedApp/app_pages/kmeans_clustering.py"
+        base = os.path.dirname(__file__)               # .../MLUnsupervisedApp/app_pages
+        repo_root = os.path.abspath(os.path.join(base, os.pardir))   # .../MLUnsupervisedApp
+        csv_path = os.path.join(repo_root, "datasets", "Mall_Customers.csv")
+        return pd.read_csv(csv_path)
+    df = load_example_data()
     st.dataframe(df.head())
 
     # 2. Exploratory Data Analysis

@@ -6,6 +6,7 @@ import seaborn as sns
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 from sklearn.preprocessing import StandardScaler
+import os
 
 
 def show():
@@ -39,7 +40,11 @@ def show():
     if data_source == "Example: Mall Customers":
         @st.cache_data
         def load_example_data():
-            return pd.read_csv("datasets/Mall_Customers.csv")
+            # __file__ is something like ".../MLUnsupervisedApp/app_pages/kmeans_clustering.py"
+            base = os.path.dirname(__file__)               # .../MLUnsupervisedApp/app_pages
+            repo_root = os.path.abspath(os.path.join(base, os.pardir))   # .../MLUnsupervisedApp
+            csv_path = os.path.join(repo_root, "datasets", "Mall_Customers.csv")
+            return pd.read_csv(csv_path)
         df = load_example_data()
 
         # Dataset Description
