@@ -49,10 +49,9 @@ def show():
         if uploaded_file is not None:
             df = pd.read_csv(uploaded_file)
     else:
-        try:
-            df = pd.read_csv("datasets/loans.csv")
-        except Exception as e:
-            st.error("Error loading loans dataset. Please check that 'datasets/loans.csv' exists.")
+        df = pd.read_csv("datasets/loans.csv")
+        # except Exception as e:
+        #     st.error("Error loading loans dataset. Please check that 'datasets/loans.csv' exists.")
 
     if df is not None:
         st.subheader("Data Preview")
