@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import os
 
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
@@ -42,16 +43,19 @@ def show():
 
     # -------------- Data Source Selection --------------
     data_source = st.radio("Select Data Source", options=["Upload Your Own Dataset", "Use Loans Dataset"])
-
     df = None
+
     if data_source == "Upload Your Own Dataset":
         uploaded_file = st.file_uploader("Upload CSV", type="csv")
         if uploaded_file is not None:
             df = pd.read_csv(uploaded_file)
     else:
-        df = pd.read_csv("datasets/loans.csv")
-        # except Exception as e:
-        #     st.error("Error loading loans dataset. Please check that 'datasets/loans.csv' exists.")
+        # Load loans.csv relative to this script
+        dataset_path = os.path.join(os.path.dirname(__file__), "datasets", "loans.csv")
+        if os.path.exists(dataset_path):
+            df = pd.read_csv(dataset_path)
+        else:
+            st.error(f"Cannot find loans.csv at {dataset_path}. Make sure the file exists in the repo and is committed.")
 
     if df is not None:
         st.subheader("Data Preview")
