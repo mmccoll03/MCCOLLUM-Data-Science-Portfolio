@@ -50,12 +50,13 @@ def show():
         if uploaded_file is not None:
             df = pd.read_csv(uploaded_file)
     else:
-        # Load loans.csv relative to this script
-        dataset_path = os.path.join(os.path.dirname(__file__), "datasets", "loans.csv")
+        # Load loans.csv relative to app root using os.getcwd()
+        dataset_path = os.path.join(os.getcwd(), "datasets", "loans.csv")
+        st.write(f"Looking for loans.csv at: {dataset_path}")  # Debug
         if os.path.exists(dataset_path):
             df = pd.read_csv(dataset_path)
         else:
-            st.error(f"Cannot find loans.csv at {dataset_path}. Make sure the file exists in the repo and is committed.")
+            st.error(f"Cannot find loans.csv at {dataset_path}. Make sure the file is committed to GitHub and in the correct folder.")
 
     if df is not None:
         st.subheader("Data Preview")
